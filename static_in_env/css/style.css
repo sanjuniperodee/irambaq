@@ -1,0 +1,127 @@
+*{
+}
+header{
+  font-family: 'Playfair Display', serif;
+
+  height: 150px;
+  /*background-color: white;*/
+  /*background-color: #8ec5fc;*/
+  width: 100%;
+}
+.header_div{
+  height:150px;
+  align-items: center;
+}
+.header_text{
+  font-size: 22px;
+  color: black
+}
+.block1{
+  font-family: 'Playfair Display', serif;
+
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  align-items: center;
+  display: flex
+}
+.block1_div{
+  margin-left: 10%;
+  width: 35%
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40%
+}
+.contact_us, .learn_more{
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  height: 40px; width: 150px;
+  font-size: 15px;
+  align-items: center
+}
+.contact_us{
+  color: white;
+  background-color: orange;
+}
+.learn_more{
+  color: black;
+  border: 2px solid greenyellow;
+}
+.block2{
+  padding: 5% 5%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.text{
+  color: black;
+}
+.block2_img{
+  object-fit: cover;
+    width: 90%;
+    height: 450px;
+}
+.catalog{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  padding: 5% 5%;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+.catalog-header{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-around
+}
+.contactus{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  height: 700px;
+  padding: 5% 5%;
+  display: flex;
+  justify-content: space-around;
+}
+.contacts{
+  border-radius: 10px;
+  padding: 3% 4%;
+  background-color: white;
+  align-items: center;
+  width: 40%;
+}
+.form{
+  text-align: center;
+  word-break: break-word;
+  border-radius: 10px;
+  padding: 3% 4%;
+  background-color: white;
+  width: 40%;
+}
+.contacts h1{
+  font-size: 22px;
+  font-weight: bolder;
+  color: #27A337;
+}
+.contacts p{
+  font-size: 17px;
+  /*font-weight: bold;*/
+}
+.form p{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 17px;
+  font-weight: lighter;
+
+}
+.form input{
+  border: 1px solid #2432381F;
+  border-radius: 25px;
+  background-color: #2432381F;
+  width: 77%;
+  height: 40px;
+  text-align: center;
+}
+.ecosystem{
+}

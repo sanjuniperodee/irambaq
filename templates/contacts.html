@@ -1,0 +1,37 @@
+{% load static %}
+<div class="contactus" style="background-image: url({% static 'img/contactsbackground.jpeg'%});">
+    <div class="contacts">
+        <h1 style="font-size: 56px; color: black" >Contacts</h1>
+        <br>
+        <img src="{% static 'img/after.png' %}" width="160px">
+        <br>
+        <br>
+        <h1>Наш Офис</h1>
+        <p>Казахфильм 12</p>
+        <h1>Телефон</h1>
+        <p>+7 771 153 4444</p>
+        <h1>Email</h1>
+        <p>irambaq@gmail.com</p>
+    </div>
+    <div class="form">
+        <h3>Хотите консультацию? Оставьте контакты, мы с вами свяжемся!</h3>
+        <p>
+            Заполните форму ниже, и мы свяжемся с вами в ближайшее время, чтобы обсудить объем работ.
+        </p>
+        <form method="POST">
+        <input placeholder="Введите Ваше имя">
+
+        <br>
+        <br>
+        <input placeholder="Введите номер телефона">
+        <br>
+        <br>
+        <input placeholder="Введите электронную почту" >
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="submit" style="background-color: orange">
+        </form>
+    </div>
+</div>
