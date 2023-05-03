@@ -5,12 +5,14 @@
 {% load static %}
 <style>
     .carousel-item {
+      {#width: 100%;#}
       height: 400px;
       background: no-repeat center center scroll;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+      border-radius: 25px;
     }
     .header_eco{
         font-size: 32px;
@@ -19,8 +21,8 @@
         justify-content: space-around;
     }
 </style>
-<div class="row px-xl-5 justify-content-around pb-5 pt-5" style="background-image: url({% static 'img/back_eco.jpeg' %}); background-size: 100%; font-family: 'Fira Sans Condensed', sans-serif;">
-    <div class="col-lg-5 col-md-4 col-sm-6 pb-1 col-6 mb-5">
+<div id="ecosystem" class="row px-xl-5 justify-content-around pb-5 pt-5 w-100 m-0" style="background-image: url({% static 'img/back_eco.jpeg' %}); background-size: 100%; font-family: 'Fira Sans Condensed', sans-serif;">
+    <div class="col-lg-5 col-md-9 col-sm-9 pb-1 col-9 mb-5">
         <h1 style="font-size: 32px;" class="header_eco">ГОСУДАРСТВЕННЫЕ ПРОЕКТЫ</h1>
     <div id="carouselExampleIndicators" class="carousel slide my-carousel my-carousel" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -46,7 +48,7 @@
       </a>
     </div>
     </div>
-    <div class="col-lg-5 col-md-4 col-sm-6 pb-1 col-6 mb-5">
+    <div class="col-lg-5 col-md-4 col-sm-9 pb-1 col-9 mb-5">
                 <h1 class="header_eco">ПАРК КОКТАЛ АСТАНА</h1>
 
     <div id="carouselExampleIndicators1" class="carousel slide my-carousel my-carousel" data-ride="carousel">
@@ -77,7 +79,7 @@
       </a>
     </div>
     </div>
-    <div class="col-lg-5 col-md-4 col-sm-6 pb-1 col-6">
+    <div class="col-lg-5 col-md-9 col-sm-9 pb-1 col-9 pb-5">
                 <h1 class="header_eco">ЭКОСИСТЕМЫ</h1>
 
     <div id="carouselExampleIndicators2" class="carousel slide my-carousel my-carousel" data-ride="carousel">
@@ -114,7 +116,7 @@
       </a>
     </div>
     </div>
-    <div class="col-lg-5 col-md-4 col-sm-6 pb-1 col-6">
+    <div class="col-lg-5 col-md-4 col-sm-9 pb-1 col-9">
                 <h1 class="header_eco">БЛАГОУСТРОЙСТВО</h1>
 
     <div id="carouselExampleIndicators3" class="carousel slide my-carousel my-carousel" data-ride="carousel">

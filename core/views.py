@@ -9,9 +9,14 @@ from core.models import Item
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
 def home(request):
-    products = Item.objects.all()
+    products = Item.objects.filter(category__title="Каталог")
+    products1 = Item.objects.filter(category__title="Саженцы")
+    products2 = Item.objects.filter(category__title="Сеянцы")
+
     context = {
         'object_list': products,
+        'object_list1': products1,
+        'object_list2': products2,
     }
     return render(request, 'home.html', context)
 
