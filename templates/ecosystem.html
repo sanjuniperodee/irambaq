@@ -5,29 +5,34 @@
 {% load static %}
 <style>
     .carousel-item {
-      height: 700px;
+      height: 400px;
       background: no-repeat center center scroll;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
     }
+    .header_eco{
+        font-size: 32px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
 </style>
-    <div id="carouselExampleIndicators" class="carousel slide my-carousel my-carousel" data-ride="carousel" style="background-image: url('{% static 'img/background_ekosystem.webp'%}')">
+<div class="row px-xl-5 justify-content-around pb-5 pt-5" style="background-image: url({% static 'img/back_eco.jpeg' %}); background-size: 100%; font-family: 'Fira Sans Condensed', sans-serif;">
+    <div class="col-lg-5 col-md-4 col-sm-6 pb-1 col-6 mb-5">
+        <h1 style="font-size: 32px;" class="header_eco">ГОСУДАРСТВЕННЫЕ ПРОЕКТЫ</h1>
+    <div id="carouselExampleIndicators" class="carousel slide my-carousel my-carousel" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" style="background-image: url('{% static 'img/carousel1.jpg' %}')">
+        <div class="carousel-item active" style="background-image: url('{% static 'img/Рисунок4.png' %}')">
 
         </div>
           <div class="carousel-item " style="
-                  background-image: url('{% static 'img/carousel2.jpeg' %}')">
-
-        </div>
-        <div class="carousel-item " style="background-image: url('{% static 'img/carousel3.jpg' %}')">
+                  background-image: url('{% static 'img/Рисунок5.png' %}')">
 
         </div>
       </div>
@@ -40,6 +45,107 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    </div>
+    <div class="col-lg-5 col-md-4 col-sm-6 pb-1 col-6 mb-5">
+                <h1 class="header_eco">ПАРК КОКТАЛ АСТАНА</h1>
+
+    <div id="carouselExampleIndicators1" class="carousel slide my-carousel my-carousel" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="background-image: url('{% static 'img/Рисунок7.png' %}')">
+
+        </div>
+          <div class="carousel-item " style="
+                  background-image: url('{% static 'img/Рисунок6.png' %}')">
+
+        </div>
+        <div class="carousel-item " style="background-image: url('{% static 'img/Рисунок8.png' %}')">
+
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
+    <div class="col-lg-5 col-md-4 col-sm-6 pb-1 col-6">
+                <h1 class="header_eco">ЭКОСИСТЕМЫ</h1>
+
+    <div id="carouselExampleIndicators2" class="carousel slide my-carousel my-carousel" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="background-image: url('{% static 'img/Рисунок9.jpg' %}')">
+
+        </div>
+          <div class="carousel-item " style="background-image: url('{% static 'img/Рисунок10.jpg' %}')">
+
+        </div>
+        <div class="carousel-item " style="background-image: url('{% static 'img/Рисунок11.jpg' %}')">
+
+        </div>
+          <div class="carousel-item " style="background-image: url('{% static 'img/Рисунок12.jpg' %}')">
+
+        </div>
+          <div class="carousel-item " style="background-image: url('{% static 'img/Рисунок13.jpg' %}')">
+
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
+    <div class="col-lg-5 col-md-4 col-sm-6 pb-1 col-6">
+                <h1 class="header_eco">БЛАГОУСТРОЙСТВО</h1>
+
+    <div id="carouselExampleIndicators3" class="carousel slide my-carousel my-carousel" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="background-image: url('{% static 'img/Рисунок1.png' %}')">
+
+        </div>
+          <div class="carousel-item " style="
+                  background-image: url('{% static 'img/Рисунок2.png' %}')">
+
+        </div>
+        <div class="carousel-item " style="background-image: url('{% static 'img/Рисунок3.png' %}')">
+
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
+</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
