@@ -7,6 +7,7 @@ app_name = 'core'
 urlpatterns = [
     path('', home, name='home'),
     path('nashi_raboty', works, name='nashi_raboty'),
+    path('catalog', catalog, name='catalog'),
     path('detail<str:slug>', detail, name='detail'),
     path('add-to-cart/<slug>', add_to_cart, name='add-to-cart'),
     path('order-summary/', order_summary, name='order-summary'),

@@ -19,6 +19,9 @@ stripe.api_key = settings.STRIPE_SECRET_KEY
 def works(request):
     return  render(request, 'carousels.html')
 
+def catalog(request):
+    return  render(request, 'catalog.html')
+
 def order_summary(request):
     order = Order.objects.get_or_create(session_id=request.session['nonuser'])
     context = {
