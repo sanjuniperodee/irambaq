@@ -20,7 +20,24 @@ def works(request):
     return  render(request, 'carousels.html')
 
 def catalog(request):
-    return  render(request, 'catalog.html')
+    if not request.user.is_authenticated:
+        try:
+            print(request.session['nonuser'])
+        except:
+            request.session['nonuser'] = str(uuid.uuid4())
+            print('dfgdfgdfgdfg')
+            print(request.session['nonuser'])
+            request.session.save()
+    products = Item.objects.filter(category__title="Каталог")
+    products1 = Item.objects.filter(category__title="Саженцы")
+    products2 = Item.objects.filter(category__title="Сеянцы")
+
+    context = {
+        'object_list': products,
+        'object_list1': products1,
+        'object_list2': products2,
+    }
+    return  render(request, 'catalog.html', context)
 
 def order_summary(request):
     order = Order.objects.get_or_create(session_id=request.session['nonuser'])
